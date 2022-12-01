@@ -1,5 +1,6 @@
 import sys
 import logging
+import os
 
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
@@ -32,6 +33,7 @@ class MNMReader:
             title_count+=1
             logging.info("Playing new title: %s...", title)
             playsound(sound_filename)
+            os.remove(sound_filename)
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
