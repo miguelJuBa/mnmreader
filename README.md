@@ -1,5 +1,5 @@
 # mnmreader
-A text to speach script for meneame news
+A text to speech script for meneame news
 
 ## How to run it
 Developed and tested using python 3.9.4
